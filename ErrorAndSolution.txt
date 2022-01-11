@@ -1,0 +1,2 @@
+#Error: Expo push notification is only supported in expo projects.
+Solution: We need to login to the expo account by using cmd.
