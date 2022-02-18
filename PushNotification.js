@@ -96,6 +96,10 @@ export default function App() {
         title : "Push Notification",
         data: {extraData: 'some data'},
         body: 'This push notification was send via the app!'
+        //I can set a trigger time also
+        // trigger:{
+        //   seconds: 1,
+        // }
       })
     })
     
