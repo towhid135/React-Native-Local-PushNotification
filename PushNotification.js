@@ -57,10 +57,12 @@ export default function App() {
   },[token]);
 
   useEffect(()=>{
+    // it helps to show notification if app is minimized (if we go to the main menu or using some othe app)
     const backgroundSubscription = Notifications.addNotificationResponseReceivedListener(response =>{
       /* Here, I can navigate to another screen, send a HTTP request etc. */
       console.log('On tap response ',response);
     })
+    //it helps to show notification when we are using the app
     const foregroundSubscription = Notifications.addNotificationReceivedListener(notification =>{
       console.log('notification data ',notification);
     });
